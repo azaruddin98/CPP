@@ -3,7 +3,7 @@
 using namespace std;
 
 template<typename T,int size>
-T sum(T (&parr)[size])
+T sum(T (&parr)[size]) //must be address, reference, nullptr,enums,integrals
 {   int total = 0;
     for(int i=0;i<size;i++){
         total += parr[i];
