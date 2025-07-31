@@ -1,0 +1,54 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+#include <vector>
+#include <list>
+#include <algorithm>
+
+using namespace std;
+int DecendingSort(int a, int b){
+    return a>b;
+}
+int main() {
+    // Write C++ code her
+    vector<int> V;
+    vector<int> V1;
+    vector<int> V2;
+    list<int> Li;
+    V.push_back(10);
+    V.push_back(20);
+    V.push_back(30);
+    V.push_back(40);
+    V1.assign(V.begin(),V.end());
+    V2.insert(V2.begin(),V1.begin(),V1.end());
+    
+    vector<int>::iterator itr = V.begin();
+    for(itr;itr!=V.end();itr++){
+        cout<<*itr << " ";
+    }
+    cout<<endl;
+    V.insert(V.begin()+2,50);
+    itr = find(V.begin(),V.end(),40);
+    V.erase(itr);
+    
+    for(int i=0;i<V.size();i++){
+        cout<<V[i]<<" ";
+    }
+    cout<<endl;
+    cout<<"V1 vector :";
+     for(int i=0;i<V1.size();i++){
+        cout<<V1[i]<<" ";
+    }
+    
+    cout<<"V2 vector :";
+    for(int i=0;i<V2.size();i++){
+        cout<<V2[i]<<" ";
+    }
+    cout<<endl;
+    
+    sort(V1.begin(),V1.end(),DecendingSort);
+    cout<<"V1 decending :";
+    for(int i=0;i<V2.size();i++){
+        cout<<V1[i]<<" ";
+    }
+    return 0;
+}
