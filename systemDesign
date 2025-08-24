@@ -1,0 +1,51 @@
+System Design Interviews were difficult,
+
+Until I know these 23 principles.
+
+1. If you need to scale an individual component, stick with Vertical Scaling first. Then, consider horizontal scaling when needed.
+
+2. To deal with traffic spikes, evaluate the use of Autoscaling for Dynamic Resource Allocation.
+
+3. If the system requires High Availability with Performance, consider using a Load Balancer.
+
+4. If you're building a read-heavy system, it's a good idea to use a Cache.
+
+5. Listen to the system requirements properly and note them down if needed.
+
+6. To reduce the latency of static assets, consider using a CDN.
+
+7. If you want to improve the database query performance, focus on the right indexes.
+
+8. To scale the read requests to your database, consider Database Replication.
+
+9. To scale write requests, consider Database Sharding.
+
+10. Clarify your assumptions before jumping into the solution.
+
+11. For global distribution of data, use a CDN.
+
+12. If you want to store complex data such as videos, images, and files, go for an Object Storage.
+
+13. To manage the load on the server and prevent denial-of-service attacks, use Rate Limiting.
+
+14. To remove a Single Point of Failure, implement Redundancy and Isolation.
+
+15. Clarify the Non-Functional Requirements as well and take them into account.
+
+16. To improve the Fault Tolerance and Durability of your data, consider Data Replication techniques.
+
+17. If the system needs to execute long-running tasks, use Async Processing and Background Processes.
+
+18. To build a loosely coupled system, consider the use of Event-Driven Architecture.
+
+19. If the system needs to store unstructured data, consider NoSQL databases.
+
+20. Keep getting feedback during the discussion rather than waiting till the end.
+
+21. To deal with large amounts of data flowing through the network, use Compression and Pagination techniques.
+
+22. For automated builds and deployments, consider implementing CI/CD pipelines.
+
+23. To achieve independent deployments of various parts of the system, consider microservices architecture.
+
+𝗞𝗲𝗲𝗽𝗶𝗻𝗴 𝘁𝗵𝗶𝘀 𝗶𝗻 𝗺𝗶𝗻𝗱, 𝗜’𝘃𝗲 𝗽𝗿𝗲𝗽𝗮𝗿𝗲𝗱 𝗶𝗻 𝗗𝗲𝗽𝘁𝗵 𝗦𝘆𝘀𝘁𝗲𝗺 𝗗𝗲𝘀𝗶𝗴𝗻 𝗚𝘂𝗶𝗱𝗲.
