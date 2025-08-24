@@ -1,0 +1,47 @@
+6 COMMON WAYS TO BUILD APIS
+
+REST
+What it is: Representational State Transfer; a stateless, resource-based approach using HTTP.
+
+How it works: A client (often a browser or app) sends HTTP requests to a server; the server responds with resources (usually in JSON or XML).
+Key details from the diagram:
+Client and server exchange HTTP requests and responses.
+Emphasizes the request/response model over a single connection.
+
+GraphQL
+What it is: A query language and runtime for APIs that lets clients request exactly the data they need.
+
+How it works: A client talks to a GraphQL server (often via HTTP) which queries a graph of services/databases; the server resolves the query and returns precisely the requested data.
+Key details from the diagram:
+Client communicates with a central GraphQL node (often a gateway) that routes to multiple backend services or databases (depicted as a cluster of servers).
+Flexible data retrieval in a single request, reducing over-fetching.
+
+WebSocket
+What it is: A protocol that provides a persistent, full-duplex connection between client and server, enabling real-time communication.
+
+How it works: After an initial handshake over HTTP, a single long-lived connection is kept open, allowing both sides to send messages anytime.
+Key details from the diagram:
+Shows a client establishing a web socket connection to the server, then messages flow back and forth over the same connection.
+
+gRPC
+What it is: A high-performance RPC framework built on HTTP/2 with protocol buffers (protobuf) for serialization.
+
+How it works: A gRPC client makes a “proto req” to a gRPC server, which returns a “proto res.” Multiple servers can be involved behind a gRPC server.
+Key details from the diagram:
+Client -> Proto Req -> Proto Res -> GRPC Server, with a chain-like flow to multiple nodes.
+
+MQTT
+What it is: A lightweight publish/subscribe messaging protocol designed for low-bandwidth, high-latency or unreliable networks (IoT).
+
+How it works: There are publishers (devices producing messages), subscribers (clients consuming messages), and a broker that routes messages based on topics.
+Key details from the diagram:
+Shows a broker in the center connected to publishers and subscribers via topics.
+
+Serverless
+What it is: An execution model where you run code in response to events without managing servers (functions-as-a-service).
+
+How it works: A client makes a request (REQ); the system triggers a serverless function (API) that processes the request and returns a response (RES).
+Key details from the diagram:
+Shows a client calling an API, which is implemented via serverless functions. The API is managed by a platform (no server you manage directly).
+
+Want to know more? Follow me or connect🥂
